@@ -7,12 +7,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./solution.png)
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/jmmaglonzo/Frontend-Mentor-NFT-preview-Card)
+- Live Site URL: [Netlify](https://lonzo-nft-preview-card.netlify.app/)
 
 ### Built with
 
