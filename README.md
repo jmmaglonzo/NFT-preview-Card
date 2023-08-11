@@ -23,8 +23,7 @@ Users should be able to:
 
 ### What I learned
 
--add some hover effects although it is not completed
-
+-add some hover effects although and change to scss
 ### Continued development
 
 - I'm stil learning the position relative and absolute
