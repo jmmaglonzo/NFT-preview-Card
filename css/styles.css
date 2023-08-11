@@ -1,0 +1,136 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 37.5rem;
+}
+.container .card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+.container .card .nft {
+  position: relative;
+  cursor: pointer;
+}
+.container .card .nft img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.8rem;
+  display: block;
+}
+.container .card .nft .img-overlay {
+  background-color: hsla(178, 100%, 50%, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all ease 0.4s;
+  display: block;
+}
+.container .card .nft .img-overlay img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+}
+.container .card .nft .img-overlay:hover {
+  opacity: 1;
+}
+.container .card .text h2 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.container .card .text h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+.container .card .text p {
+  font-size: 1.6rem;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5;
+}
+.container .card .price {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsl(215, 51%, 70%);
+}
+.container .card .price .ethereum {
+  font-size: 1.8rem;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.container .card .price .ethereum img {
+  margin-right: 0.5rem;
+}
+.container .card .price .days {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+.container .card .price .days img {
+  margin-right: 0.5rem;
+}
+.container .card .author {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.container .card .author img {
+  width: 10%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.container .card .author p {
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.container .card .author p:hover {
+  color: hsl(178, 100%, 50%);
+}
+.container .card .author p span {
+  color: hsl(215, 51%, 70%);
+}

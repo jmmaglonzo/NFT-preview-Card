@@ -1,0 +1,122 @@
+@import "./configs";
+
+.container {
+  width: 37.5rem;
+
+  .card {
+    background-color: $card-BG;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+
+    .nft {
+      position: relative;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1.8rem;
+        display: block;
+      }
+
+      .img-overlay {
+        background-color: $cyan-bg;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all ease 0.4s;
+        display: block;
+        img {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 5rem;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .text {
+      h2 {
+        font-size: 2rem;
+        color: $White;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        &:hover {
+          color: $cyan;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        color: $soft-blue;
+        line-height: 1.5;
+      }
+    }
+
+    .price {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $soft-blue;
+
+      .ethereum {
+        font-size: 1.8rem;
+        color: $cyan;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+
+      .days {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        color: $soft-blue;
+
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .author {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+      img {
+        width: 10%;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+      }
+      p {
+        font-size: 1.6rem;
+        color: $White;
+        cursor: pointer;
+        &:hover {
+          color: $cyan;
+        }
+        span {
+          color: $soft-blue;
+        }
+      }
+    }
+  }
+}
